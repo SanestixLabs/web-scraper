@@ -13,7 +13,7 @@ export const createJobService = async (data, userId) => {
   });
 
   redisClient.lpush(
-    "jobQueue",
+    "job_queue",
     JSON.stringify({
       jobId: newJob._id,
       scraperType: newJob.scraperType,
