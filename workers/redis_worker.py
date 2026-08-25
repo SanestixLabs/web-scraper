@@ -4,6 +4,8 @@ Raw Redis queue worker (replaces the earlier Celery-based approach
 
 from __future__ import annotations
 
+import shared.transport
+import shared.session
 import asyncio
 import json
 import logging
